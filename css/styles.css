@@ -83,12 +83,18 @@
 :root {
     --color-primary: #00496e;
     --color-primary-light: #499fb5;
-    --color-button: #d4e8ec;
+
+    --color-secondary: #a8d0da;
+    --color-secondary-light: #d4e8ec;
+
+    --color-secondary-sandy: #ffa360;
+
+    /*--color-button: #d4e8ec;
     --color-accent: #e8734a;
     --color-text: #333333;
-    --color-text-light: #666666;
+    --color-text-light: #666666;*/
     --color-white: #ffffff;
-    --color-gray-light: #f8f9fa;
+    /*--color-gray-light: #f8f9fa;*/
     --font-logo: 'Derenis', Georgia, serif;
     --font-heading: 'Neighbor', Georgia, serif;
     --font-body: 'Nunito Sans', Arial, sans-serif;
@@ -205,13 +211,27 @@ body {
 
 /* Custom Buttons */
 .btn-primary-custom {
-    background: var(--color-button);
+    background: var(--color-secondary-light);
     color: var(--color-primary);
     display: inline-flex;
     align-items: center;
     padding: 10px 20px;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 16px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.btn-primary-custom svg {
+    width: 54px;
+    height: 54px;
+    position: relative;
+    top: 0px;
+    right: -22px;
+}
+
+.btn-primary-custom svg circle {
+    fill: var(--color-secondary-sandy);
 }
 
 .btn-primary-custom:hover {
