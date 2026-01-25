@@ -1,0 +1,380 @@
+/* Font Faces */
+@font-face {
+    font-family: 'Derenis';
+    src: url('../fonts/Derenis_Demo - Logo Font/DERENISDEMO.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Museo';
+    src: url('../fonts/Museo - LogoMark Font/Museo500-Regular.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neighbor';
+    src: url('../fonts/Neighbor - Headlines/fonnts.com-Neighbor_Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neighbor';
+    src: url('../fonts/Neighbor - Headlines/fonnts.com-Neighbor_Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neighbor';
+    src: url('../fonts/Neighbor - Headlines/fonnts.com-Neighbor_Light.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neighbor';
+    src: url('../fonts/Neighbor - Headlines/fonnts.com-Neighbor_Light_Italic.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neighbor';
+    src: url('../fonts/Neighbor - Headlines/fonnts.com-Neighbor_Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../fonts/Nunito_Sans - Body/NunitoSans-VariableFont_YTLC,opsz,wdth,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('../fonts/PT_Sans_Narrow - Navigation/PTSansNarrow-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow';
+    src: url('../fonts/PT_Sans_Narrow - Navigation/PTSansNarrow-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* CSS Variables */
+:root {
+    --color-primary: #00496e;
+    --color-primary-light: #499fb5;
+    --color-button: #d4e8ec;
+    --color-accent: #e8734a;
+    --color-text: #333333;
+    --color-text-light: #666666;
+    --color-white: #ffffff;
+    --color-gray-light: #f8f9fa;
+    --font-logo: 'Derenis', Georgia, serif;
+    --font-heading: 'Neighbor', Georgia, serif;
+    --font-body: 'Nunito Sans', Arial, sans-serif;
+    --font-nav: 'PT Sans Narrow', Arial, sans-serif;
+}
+
+/* Base Styles */
+body {
+    font-family: var(--font-body);
+    color: var(--color-text);
+}
+
+/* Header */
+.header {
+    background: transparent;
+    transition: background 0.3s ease;
+    height: 80px;
+}
+
+.header .navbar-brand {
+    height: 80px;
+}
+
+.header .navbar-brand img {
+    object-position: 10px -42px;
+    height: 150px;
+}
+
+.header.scrolled {
+    background: rgba(26, 85, 102, 0.98);
+}
+
+.header .nav-link {
+    font-family: var(--font-nav);
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--color-white);
+}
+
+.header .nav-link:hover {
+    color: var(--color-accent);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 80vh;
+    background: url('../images/homepage_hero.jpg') center 30%/cover no-repeat;
+}
+
+.hero-logo-img {
+    width: 480px;
+    max-width: 90%;
+    height: auto;
+}
+
+.hero-wave {
+    line-height: 0;
+}
+
+.hero-wave svg {
+    width: 100%;
+    height: 100px;
+}
+
+/* About Section */
+.about {
+    background: var(--color-white);
+    color: var(--color-primary);
+    padding-bottom: 100px;
+}
+
+.about-heading {
+    color: var(--color-primary-light);
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 300;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-text {
+    font-size: 1.2rem;
+}
+
+.about-wave {
+    line-height: 0;
+}
+
+.about-wave svg {
+    width: 100%;
+    height: 60px;
+}
+
+.about-image img {
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.05);
+}
+
+/* Section Titles */
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+/* Custom Buttons */
+.btn-primary-custom {
+    background: var(--color-button);
+    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn-primary-custom:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.btn-outline-custom {
+    background: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn-outline-custom:hover {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+.btn-icon {
+    display: inline-flex;
+    align-items: center;
+}
+
+.btn-accent {
+    background: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+}
+
+.btn-accent:hover {
+    background: #d66840;
+    color: var(--color-white);
+}
+
+/* Text Colors */
+.text-primary-custom {
+    color: var(--color-white) !important;
+}
+
+.link-info {
+    color: var(--color-white) !important;
+}
+
+.link-info:hover {
+    text-decoration: underline !important;
+}
+
+/* Form Controls */
+.form-control {
+    border: 2px solid var(--color-primary-light);
+    border-right: none;
+}
+
+.form-control:focus {
+    border-color: var(--color-primary-light);
+    box-shadow: none;
+}
+
+.input-group .btn {
+    border: 2px solid var(--color-primary-light);
+    border-left: none;
+}
+
+/* Race Results Section */
+
+.results {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.results .section-title {
+    color: var(--color-white);
+}
+
+/* Upcoming Section */
+.upcoming {
+    background: var(--color-gray-light);
+    border-top: 4px solid var(--color-primary);
+}
+
+.upcoming .section-title {
+    color: var(--color-primary);
+}
+
+.upcoming-title {
+    color: var(--color-primary-light);
+    text-decoration: none;
+}
+
+.upcoming-title:hover {
+    text-decoration: underline;
+    color: var(--color-primary-light);
+}
+
+/* Partners Section */
+.partners {
+    background: var(--color-primary-light);
+}
+
+.partners .section-title {
+    color: var(--color-white);
+}
+
+.partner-logo {
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Footer */
+.footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+.footer-nav a {
+    font-family: var(--font-nav);
+    transition: opacity 0.3s ease;
+}
+
+.footer-nav a:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .hero-logo-img {
+        width: 300px;
+    }
+
+    .about-heading {
+        font-size: 1.3rem;
+    }
+
+    .hero-wave svg {
+        height: 60px;
+    }
+
+    .about-wave svg {
+        height: 40px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-logo-img {
+        width: 240px;
+    }
+
+    .about-heading {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1.4rem;
+    }
+
+    .about-image img {
+        height: 140px;
+    }
+}
