@@ -110,11 +110,13 @@ body {
 
 .header .navbar-brand {
     height: 80px;
+    width: 290px;
+    overflow: hidden;
 }
 
 .header .navbar-brand img {
     height: 150px;
-    object-position: 10px -42px;
+    object-position: -50px -35px;
 }
 
 .header.scrolled {
@@ -345,11 +347,6 @@ body {
 /* Responsive */
 @media (max-width: 991.98px) {
 
-    .header .navbar-brand img {
-        height: 120px;
-        object-position: -40px -25px;
-    }
-
     .hero-logo-img {
         width: 300px;
     }
@@ -368,6 +365,7 @@ body {
 }
 
 @media (max-width: 575.98px) {
+
     .hero-logo-img {
         width: 240px;
     }
@@ -383,4 +381,18 @@ body {
     .about-image img {
         height: 140px;
     }
+}
+
+@media (max-width: 420px) {
+
+    .header .navbar-brand {
+        width: 200px;
+    }
+
+    .header .navbar-brand img {
+        height: 100px;
+        object-position: -26px -9px;
+    }
+
+    
 }
