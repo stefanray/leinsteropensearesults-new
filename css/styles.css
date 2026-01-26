@@ -74,7 +74,7 @@
 @font-face {
     font-family: 'PT Sans Narrow';
     src: url('../fonts/PT_Sans_Narrow - Navigation/PTSansNarrow-Bold.ttf') format('truetype');
-    font-weight: 700;
+    font-weight: 600;
     font-style: normal;
     font-display: swap;
 }
@@ -88,6 +88,7 @@
     --color-secondary-light: #d4e8ec;
 
     --color-secondary-sandy: #ffa360;
+
 
     /*--color-button: #d4e8ec;
     --color-accent: #e8734a;
@@ -115,14 +116,14 @@ body {
 }
 
 .header .navbar-brand {
-    height: 80px;
+    height: 70px;
     width: 290px;
     overflow: hidden;
 }
 
 .header .navbar-brand img {
     height: 150px;
-    object-position: -50px -35px;
+    object-position: -50px -40px;
 }
 
 .header.scrolled {
@@ -171,15 +172,14 @@ body {
 .about-heading {
     color: var(--color-primary-light);
     font-family: var(--font-heading);
-    font-size: 2rem;
+    font-size: 30pt;
     font-weight: 300;
-    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .about-text {
-    font-size: 1.2rem;
+    font-size: 16pt;
 }
 
 .about-wave {
@@ -204,7 +204,7 @@ body {
 /* Section Titles */
 .section-title {
     font-family: var(--font-heading);
-    font-size: 1.75rem;
+    font-size: 30pt;
     font-weight: 300;
     color: var(--color-primary);
 }
@@ -217,7 +217,7 @@ body {
     align-items: center;
     padding: 10px 20px;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     height: 50px;
     overflow: hidden;
 }
@@ -240,43 +240,7 @@ body {
     border-color: var(--color-white);
 }
 
-.btn-outline-custom {
-    background: transparent;
-    color: var(--color-primary);
-    border: 2px solid var(--color-primary);
-    display: inline-flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-weight: 600;
-    font-size: 13px;
-}
-
-.btn-outline-custom:hover {
-    background: var(--color-primary);
-    color: var(--color-white);
-    border-color: var(--color-primary);
-}
-
-.btn-icon {
-    display: inline-flex;
-    align-items: center;
-}
-
-.btn-accent {
-    background: var(--color-accent);
-    color: var(--color-white);
-    border: none;
-}
-
-.btn-accent:hover {
-    background: #d66840;
-    color: var(--color-white);
-}
-
 /* Text Colors */
-.text-primary-custom {
-    color: var(--color-white) !important;
-}
 
 .link-info {
     color: var(--color-white) !important;
@@ -313,6 +277,32 @@ body {
     color: var(--color-white);
 }
 
+.results .title {
+    color: var(--color-secondary-light) !important;
+    font-size: 16pt;
+}
+
+.results .text {
+    color: var(--color-white) !important;
+    font-size: 12pt;
+}
+
+.results input.form-control {
+    border: 0;
+}
+
+.results input.form-control::placeholder {
+    border: 0;
+    color: var(--color-primary);
+    font-size: 16pt;
+}
+
+.results .btn-accent {
+    border: 0;
+    background-color: var(--color-secondary-sandy);
+    color: var(--color-secondary-white);
+}
+
 /* Upcoming Section */
 .upcoming {
     background: var(--color-gray-light);
@@ -323,14 +313,21 @@ body {
     color: var(--color-primary);
 }
 
-.upcoming-title {
+.upcoming .title {
     color: var(--color-primary-light);
     text-decoration: none;
+    font-size: 16pt;
 }
 
-.upcoming-title:hover {
+.upcoming .title:hover {
     text-decoration: underline;
     color: var(--color-primary-light);
+}
+
+.upcoming .text {
+    color: var(--color-primary);
+    text-decoration: none;
+    font-size: 12pt;
 }
 
 /* Partners Section */
@@ -355,52 +352,47 @@ body {
     color: var(--color-white);
 }
 
+.footer .footer-logo img {
+    height: 200px;
+    width: 145px;
+}
+
+.footer .address {
+    margin-top: 60px;
+}
+
 .footer-nav a {
-    font-family: var(--font-nav);
-    transition: opacity 0.3s ease;
+     font-family: var(--font-nav);
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 .footer-nav a:hover {
-    opacity: 0.8;
+    color: var(--color-accent);
 }
 
 /* Responsive */
+@media (min-width: 1500px) {
+    .hero {
+        min-height: 110vh;
+    }
+}
+
 @media (max-width: 991.98px) {
 
-    .hero-logo-img {
-        width: 300px;
+    .footer .footer-nav a {
+        font-size: 10pt;
     }
 
-    .about-heading {
-        font-size: 1.3rem;
-    }
-
-    .hero-wave svg {
-        height: 60px;
-    }
-
-    .about-wave svg {
-        height: 40px;
+    .footer .footer-logo img {
+        align-self: center;
     }
 }
 
 @media (max-width: 575.98px) {
 
-    .hero-logo-img {
-        width: 240px;
-    }
-
-    .about-heading {
-        font-size: 1.1rem;
-    }
-
-    .section-title {
-        font-size: 1.4rem;
-    }
-
-    .about-image img {
-        height: 140px;
-    }
 }
 
 @media (max-width: 420px) {
@@ -411,7 +403,7 @@ body {
 
     .header .navbar-brand img {
         height: 100px;
-        object-position: -26px -9px;
+        object-position: -26px -17px;
     }
 
     

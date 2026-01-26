@@ -100,12 +100,12 @@
                 <div class="col-lg-5">
                     <h3 class="section-title mb-4">Latest Race Results</h3>
                     <div class="race-item mb-3">
-                        <strong class="d-block text-primary-custom fw-bold">Annual Scotsman's Bay Swim</strong>
-                        <span class="small">Sun 21 Sep 2025 - <a href="#" class="link-info">Mixed</a></span>
+                        <span class="d-block title fw-bold">Annual Scotsman's Bay Swim</span>
+                        <span class="text small">Sun 21 Sep 2025 - <a href="#" class="link-info">Mixed</a></span>
                     </div>
                     <div class="race-item mb-4">
-                        <strong class="d-block text-primary-custom fw-bold">The LOS Docklands Challenge</strong>
-                        <span class="small">Sat 30 Aug 2025 - <a href="#" class="link-info">Men</a> | <a href="#" class="link-info">Ladies</a></span>
+                        <span class="d-block title fw-bold">The LOS Docklands Challenge</span>
+                        <span class="text small">Sat 30 Aug 2025 - <a href="#" class="link-info">Men</a> | <a href="#" class="link-info">Ladies</a></span>
                     </div>
                     <a href="#" class="btn btn-primary-custom rounded-pill">
                         <span>View all Results</span>
@@ -123,14 +123,14 @@
                 <div class="col-lg-6 mt-4 mt-lg-0">
                     <h3 class="section-title mb-4">Your Results</h3>
                     <div class="mb-3">
-                        <label class="form-label small fw-semibold">Chip number (numbers only):</label>
+                        <label class="form-label title">Chip number (numbers only):</label>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search...">
                             <button class="btn btn-accent" type="button"><i class="bi bi-search"></i></button>
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label class="form-label small fw-semibold">LOS number (numbers only):</label>
+                        <label class="form-label title">LOS number (numbers only):</label>
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="Search...">
                             <button class="btn btn-accent" type="button"><i class="bi bi-search"></i></button>
@@ -147,12 +147,12 @@
             <h3 class="section-title mb-4">Upcoming Races</h3>
             <div class="upcoming-list mb-4">
                 <div class="upcoming-item mb-3">
-                    <a href="#" class="upcoming-title d-block fw-semibold mb-1">Welcome back Remembrance Swim - (1KM - 1.2KM) Portmarnock</a>
-                    <p class="text-muted small mb-0">Ladies: 14:00, Mens 15:00, Tide: 16:14 - Sponsor / Host Club: LOS + Clubs</p>
+                    <a href="#" class="title d-block mb-1">Welcome back Remembrance Swim - (1KM - 1.2KM) Portmarnock</a>
+                    <p class="text mb-0">Ladies: 14:00, Mens 15:00, Tide: 16:14 - Sponsor / Host Club: LOS + Clubs</p>
                 </div>
                 <div class="upcoming-item mb-3">
-                    <a href="#" class="upcoming-title d-block fw-semibold mb-1">Glenalbyn Masters SC - Seapoint</a>
-                    <p class="text-muted small mb-0">Ladies: 10:00, Mens 11:00, Tide: 10:01, Sponsor / Host Club: Glenalbyn Masters SC</p>
+                    <a href="#" class="title d-block mb-1">Glenalbyn Masters SC - Seapoint</a>
+                    <p class="text mb-0">Ladies: 10:00, Mens 11:00, Tide: 10:01, Sponsor / Host Club: Glenalbyn Masters SC</p>
                 </div>
             </div>
             <a href="#" class="btn btn-primary-custom rounded-pill">
@@ -199,27 +199,29 @@
     <!-- Footer -->
     <footer class="footer py-5">
         <div class="container">
-            <div class="row align-items-start mb-4">
-                <div class="col-md-4 mb-4 mb-md-0">
-                    <img src="logo/SVG/White/LOS_Logo_Stacked.svg" alt="Leinster Open Sea" class="footer-logo-img" height="100">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4 mb-md-0 d-flex flex-column footer-logo">
+                    <img src="logo/SVG/White/LOS_Logo_Stacked.svg" alt="Leinster Open Sea">
                 </div>
                 <div class="col-md-8 text-md-end">
-                    <p class="small mb-1 opacity-75">Leinster Open Sea Company Limited By Guarantee</p>
-                    <p class="small mb-1 opacity-75">Company #: 786322</p>
-                    <p class="small mb-0 opacity-75">Address: Leinster Open Sea CLG, E12 Calmount Business Park, Ballymount, Dublin 12</p>
-                </div>
-            </div>
-            <div class="d-flex flex-column flex-md-row justify-content-center align-items-center gap-3 pt-3">
-                <nav class="footer-nav d-flex flex-wrap justify-content-center gap-3 gap-md-4">
-                    <a href="#" class="text-white text-decoration-none small fw-semibold">LOGIN</a>
-                    <a href="#" class="text-white text-decoration-none small fw-semibold">DOCUMENTS</a>
-                    <a href="#" class="text-white text-decoration-none small fw-semibold">FAQ</a>
-                    <a href="#" class="text-white text-decoration-none small fw-semibold">POLICIES</a>
-                    <a href="#" class="text-white text-decoration-none small fw-semibold">CONTACT</a>
-                </nav>
-                <div class="footer-social d-flex gap-3">
-                    <a href="#" class="text-white" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
-                    <a href="#" class="text-white" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                    <div class="address">
+                        <p class="small mb-1 opacity-75">Leinster Open Sea Company Limited By Guarantee</p>
+                        <p class="small mb-1 opacity-75">Company #: 786322</p>
+                        <p class="small mb-0 opacity-75">Address: Leinster Open Sea CLG, E12 Calmount Business Park, Ballymount, Dublin 12</p>
+                    </div>
+                    <div class="d-flex flex-column flex-row-reverse align-items-center gap-3 pt-3">
+                        <div class="footer-social d-flex gap-3">
+                            <a href="#" class="text-white" aria-label="Instagram"><i class="bi bi-instagram fs-5"></i></a>
+                            <a href="#" class="text-white" aria-label="Facebook"><i class="bi bi-facebook fs-5"></i></a>
+                        </div>
+                        <nav class="footer-nav d-flex flex-wrap flex-row-reverse gap-3 gap-md-4">
+                            <a href="#">CONTACT</a>
+                            <a href="#">POLICIES</a>
+                            <a href="#">FAQ</a>
+                            <a href="#">DOCUMENTS</a>
+                            <a href="#">LOGIN</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
         </div>
