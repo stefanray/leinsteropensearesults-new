@@ -127,7 +127,7 @@ body {
 }
 
 .header.scrolled {
-    background: rgba(26, 85, 102, 0.98);
+    background: var(--color-primary-light);
 }
 
 .header .nav-link {
