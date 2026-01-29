@@ -121,8 +121,29 @@ body a {
 
 .header .navbar-brand {
     height: 70px;
-    width: 290px;
+    width: 320px;
     overflow: hidden;
+}
+
+.header .navbar-collapse {
+    margin: 0;
+    padding: 20px;
+}
+
+.header .navbar-collapse.show {
+    background-color: #00000045;
+}
+
+.header .navbar-collapse.collapsing {
+    background-color: #00000045;
+}
+
+.header.scrolled .navbar-collapse.show {
+    background-color: var(--color-primary-light);
+}
+
+.header.scrolled .navbar-collapse.collapsing {
+    background-color: var(--color-primary-light);
 }
 
 .header .navbar-brand img {
@@ -436,12 +457,12 @@ body a {
     }
 
     .header .navbar-brand {
-        width: 200px;
+        width: 260px;
     }
 
     .header .navbar-brand img {
-        height: 100px;
-        object-position: -26px -17px;
+        height: 120px;
+        object-position: -40px -27px;
     }
 
     
