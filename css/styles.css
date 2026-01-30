@@ -119,10 +119,22 @@ body a {
     height: 80px;
 }
 
+.header .navbar {
+    height: 80px;
+}
+
 .header .navbar-brand {
-    height: 70px;
+    height: 80px;
     width: 320px;
     overflow: hidden;
+}
+
+.header .navbar-nav {
+    align-items: center;
+}
+
+.header .social-links {
+    align-items: center;
 }
 
 .header .navbar-collapse {
@@ -148,7 +160,7 @@ body a {
 
 .header .navbar-brand img {
     height: 150px;
-    object-position: -50px -40px;
+    object-position: -50px -35px;
 }
 
 .header.scrolled {
