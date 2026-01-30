@@ -143,11 +143,11 @@ body a {
 }
 
 .header .navbar-collapse.show {
-    background-color: #00000045;
+    background-color: var(--color-primary-light);
 }
 
 .header .navbar-collapse.collapsing {
-    background-color: #00000045;
+    background-color: var(--color-primary-light);
 }
 
 .header.scrolled .navbar-collapse.show {
@@ -487,6 +487,25 @@ body a {
 }
 
 @media (max-width: 991.98px) {
+
+    /* Always show solid header on mobile */
+    .header {
+        background: var(--color-primary-light);
+    }
+
+    .header::after {
+        content: '';
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        right: 0;
+        height: 40px;
+        background-image: url('../images/divider_wave_4_flipped.png');
+        background-size: 100vw 40px;
+        background-repeat: no-repeat;
+        background-position: top center;
+        pointer-events: none;
+    }
 
     .divider-wave {
         background-size: 100vw 60px;
