@@ -238,9 +238,11 @@
         }
 
         window.addEventListener('scroll', updateHeaderBackground);
-
         navCollapse.addEventListener('shown.bs.collapse', updateHeaderBackground);
         navCollapse.addEventListener('hidden.bs.collapse', updateHeaderBackground);
+
+        // Run on page load
+        updateHeaderBackground();
     </script>
 </body>
 </html>

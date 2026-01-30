@@ -268,11 +268,21 @@
         const header = document.querySelector('.header');
         const navCollapse = document.getElementById('mainNav');
 
-        // Inner pages always have scrolled header
-        header.classList.add('scrolled');
+        function updateHeaderBackground() {
+            const menuOpen = navCollapse.classList.contains('show');
+            if (window.scrollY > 50 || menuOpen) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        }
 
-        navCollapse.addEventListener('shown.bs.collapse', () => header.classList.add('scrolled'));
-        navCollapse.addEventListener('hidden.bs.collapse', () => header.classList.add('scrolled'));
+        window.addEventListener('scroll', updateHeaderBackground);
+        navCollapse.addEventListener('shown.bs.collapse', updateHeaderBackground);
+        navCollapse.addEventListener('hidden.bs.collapse', updateHeaderBackground);
+
+        // Run on page load
+        updateHeaderBackground();
     </script>
 </body>
 </html>
