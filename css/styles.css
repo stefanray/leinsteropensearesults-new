@@ -119,10 +119,22 @@ body a {
     height: 80px;
 }
 
+.header .navbar {
+    height: 80px;
+}
+
 .header .navbar-brand {
-    height: 70px;
+    height: 80px;
     width: 320px;
     overflow: hidden;
+}
+
+.header .navbar-nav {
+    align-items: center;
+}
+
+.header .social-links {
+    align-items: center;
 }
 
 .header .navbar-collapse {
@@ -131,11 +143,11 @@ body a {
 }
 
 .header .navbar-collapse.show {
-    background-color: #00000045;
+    background-color: var(--color-primary-light);
 }
 
 .header .navbar-collapse.collapsing {
-    background-color: #00000045;
+    background-color: var(--color-primary-light);
 }
 
 .header.scrolled .navbar-collapse.show {
@@ -148,11 +160,25 @@ body a {
 
 .header .navbar-brand img {
     height: 150px;
-    object-position: -50px -40px;
+    object-position: -50px -35px;
 }
 
 .header.scrolled {
     background: var(--color-primary-light);
+}
+
+.header.scrolled::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: url('../images/divider_wave_4_flipped.png');
+    background-size: 100vw 40px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    pointer-events: none;
 }
 
 .header .nav-link {
@@ -173,6 +199,26 @@ body a {
     background-position: center 70%;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+/* Page Hero (Inner Pages) */
+.page-hero {
+    min-height: 300px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    padding-top: 80px;
+}
+
+.page-hero .divider-wave {
+    background-image: url('../images/divider_wave_1.png');
+    height: 120px;
+}
+
+.page-title {
+    font-family: var(--font-heading);
+    font-size: 48pt;
+    font-weight: 300;
+    color: var(--color-white);
+    margin: 0;
 }
 
 .hero-logo-img {
@@ -390,6 +436,15 @@ body a {
 
 
 .partners .divider-wave {
+    background-image: url('../images/divider_wave_5.png');
+}
+
+/* Footer Wave */
+.footer-wave {
+    background: var(--color-primary-light);
+}
+
+.footer-wave .divider-wave {
     background-image: url('../images/divider_wave_5.png');
 }
 
