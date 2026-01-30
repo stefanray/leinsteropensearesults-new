@@ -167,6 +167,20 @@ body a {
     background: var(--color-primary-light);
 }
 
+.header.scrolled::after {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    height: 40px;
+    background-image: url('../images/divider_wave_4_flipped.png');
+    background-size: 100vw 40px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    pointer-events: none;
+}
+
 .header .nav-link {
     font-family: var(--font-nav);
     font-size: 20px;
