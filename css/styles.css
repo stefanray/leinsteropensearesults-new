@@ -175,6 +175,26 @@ body a {
     background-repeat: no-repeat;
 }
 
+/* Page Hero (Inner Pages) */
+.page-hero {
+    min-height: 300px;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+    padding-top: 80px;
+}
+
+.page-hero .divider-wave {
+    background-image: url('../images/divider_wave_1.png');
+    height: 120px;
+}
+
+.page-title {
+    font-family: var(--font-heading);
+    font-size: 48pt;
+    font-weight: 300;
+    color: var(--color-white);
+    margin: 0;
+}
+
 .hero-logo-img {
     width: 480px;
     max-width: 90%;
@@ -390,6 +410,15 @@ body a {
 
 
 .partners .divider-wave {
+    background-image: url('../images/divider_wave_5.png');
+}
+
+/* Footer Wave */
+.footer-wave {
+    background: var(--color-primary-light);
+}
+
+.footer-wave .divider-wave {
     background-image: url('../images/divider_wave_5.png');
 }
 
